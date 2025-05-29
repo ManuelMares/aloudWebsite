@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write it Aloud!</title>
+    <title>Simple Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght,INFM,SPAC@300,20,4.8&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,562;1,562&family=Shantell+Sans:wght@350&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
-    You should write it aloud
+
+    <nav class="top-bar">
+        <button class="nav-btn">Home</button>
+        <div class="nav-links">
+            <a href="#description">Description</a>
+            <a href="#contact">Contact</a>
+            <a href="#demo">Demo</a>
+        </div>
+    </nav>
+
+    <section id="main" class="screen">
+        <div class="screen-left">
+            <div class="screen-left-child">
+                <label class="screen-font banner-typefont"ba>
+                    Type less.
+                </label>
+                <label class="screen-font banner-writefont">
+                    Say more.
+                </label>
+                <div class="screen-writealoud">
+                    <label class="writealoud-text aloud-font">write it</label>
+                    <img class="writealoud-image" src="./assets/aloud-new.png"/>
+                </div>
+            </div>
+        </div> 
+
+        <div class="screen-right">
+            <img class="image-banner" src="assets/aac-user.png" />
+        </div>
+    </section>
+
+    <section id="description" class="description">
+        <h2>See what aloud, the first TTS environment has to offer!</h2>
+        <p>The next generation of digital voices</p>
+        <p>Type up to 50% faster with the most advance AAC keyboard</p>
+        <p>Because communication is more than just words, express all you think with natural reactions</p>
+        <p>Tones, reactions, acronyms...Everything in the same place!</p>
+        <p>Try our Haacks for enhanced communication</p>
+    </section>
+
+    <section id="contact" class="screen">
+        <h2>Contact</h2>
+        <p>Get in touch with us!</p>
+    </section>
+
+    <section id="demo" class="screen">
+        <h2>Demo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
 </body>
 </html>
