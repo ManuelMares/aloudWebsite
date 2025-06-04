@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght,INFM,SPAC@300,20,4.8&family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,562;1,562&family=Shantell+Sans:wght@350&family=Special+Elite&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <link rel="icon" href="assets/aloud-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght,INFM,SPAC@300,20,4.8&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,562;1,562&family=Shantell+Sans:wght@350&family=Special+Elite&display=swap" rel="stylesheet">
+  <script src="main.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <img src="./assets/aloud-new.png" class="home-icon" alt="Home">
+    <button class="menu-toggle">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#screen1">Home</a></li>
+      <li><a href="#screen2">Features</a></li>
+      <li><a href="#screen3">Table</a></li>
+      <li><a href="#screen4">About</a></li>
+      <li><a href="#screen5">Contact</a></li>
+    </ul>
+  </nav>
 
-    <nav class="top-bar">
-        <button class="nav-btn">Home</button>
-        <div class="nav-links">
-            <a href="#description">Description</a>
-            <a href="#contact">Contact</a>
-            <a href="#demo">Demo</a>
-        </div>
-    </nav>
+  <section id="screen1" class="banner">
+    <h1 class="banner-typefont">Type Less, Say More</h1>
+    <h2 class="banner-writefont">Write It Aloud</h2>
+  </section>
 
-    <section id="main" class="screen">
-        <div class="screen-left">
-            <div class="screen-left-child">
-                <label class="screen-font banner-typefont"ba>
-                    Type less.
-                </label>
-                <label class="screen-font banner-writefont">
-                    Say more.
-                </label>
-                <div class="screen-writealoud">
-                    <label class="writealoud-text aloud-font">write it</label>
-                    <img class="writealoud-image" src="./assets/aloud-new.png"/>
-                </div>
-            </div>
-        </div> 
-
-        <div class="screen-right">
-            <img class="image-banner" src="assets/aac-user.png" />
-        </div>
-    </section>
-
+  <section id="screen2" class="screen">
+    <div class="screen-2-text">
+      <h2 class="aloud-font">See what aloud, the first TTS environment has to offer!</h2>
+    </div>
+    <div class="screen-2-list">
+      <ul>
+        <li>The next generation of digital voices.</li>
+        <li>Type up to 50% faster with the most advance AAC keyboard.</li>
+        <li>Because communication is more than just words, express everything you think with natural reactions.</li>
+        <li>the first text editor created specifically for real-time communication with artificial voices.</li>
+        <li>Try our Haacks for enhanced communication.</li>
     <section id="description" class="description">
-        <h2>See what aloud, the first TTS environment has to offer!</h2>
-        <p>The next generation of digital voices</p>
-        <p>Type up to 50% faster with the most advance AAC keyboard</p>
-        <p>Because communication is more than just words, express all you think with natural reactions</p>
-        <p>Tones, reactions, acronyms...Everything in the same place!</p>
-        <p>Try our Haacks for enhanced communication</p>
     </section>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="screen">
-        <h2>Contact</h2>
-        <p>Get in touch with us!</p>
-    </section>
+    <section id="screen3" class="screen table-section">
+  <div class="table-wrapper">
 
-    <section id="demo" class="screen">
-        <h2>Demo</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Offline</th>
+                <th>High Voice Quality</th>
+                <th>AAC Keyboard</th>
+                <th>Speech Creation Features</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr><td>Proloquo2</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
+            <tr><td>GPT</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="negative-cell">✖</td></tr>
+            <tr><td>Natural reader</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
+            <tr><td>Aloud</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td></tr>
+        </tbody>
+    </table>
+  </div>
+</section>
 
+  <section id="screen4" class="about-us">
+    <h2 class="section-title">About Us</h2>
+    <p>Aloud began with the belief that every person deserves a voice. 
+        Inspired by real communication challenges, our diverse team of engineers, 
+        designers, and researchers came together to build tools that restore 
+        independence and dignity. United by empathy and expertise in AI and accessibility, 
+        we transform innovative ideas into solutions that bridge the communication gap 
+        for people with muscle impairments.</p>
+    <p>At Aloud, our mission is to enhance communication for non-verbal individuals, 
+        with a special focus on people with muscle impairments. We are committed to 
+        using innovative technology to empower voices that are often unheard.</p>
+  </section>
+
+  <section id="screen5" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <button class="button" onclick="window.location.href='mailto:manuel@writeitaloud.com'">manuel@writeitaloud.com</button>
+    <button class="button" onclick="window.location.href='tel:4237737734'">4237737734</button>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <p><strong>Company</strong></p>
+      <p>About</p>
+      <p>Careers</p>
+    </div>
+    <div>
+      <p><strong>Support</strong></p>
+      <p>Help Center</p>
+      <p>Contact Us</p>
+    </div>
+    <div>
+      <p><strong>Legal</strong></p>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+    </div>
+  </footer>
 </body>
 </html>
