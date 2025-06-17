@@ -32,64 +32,83 @@
 
   <script src="main.js"></script>
 </head>
+
+
+
+
 <body>
   <nav class="navbar">
-    <img src="./assets/aloud-new.webp" class="home-icon" alt="Write It Aloud AAC app logo for communication" />
+    <img src="./assets/full.png" class="home-icon" alt="Write It Aloud AAC app logo for communication" />
     <button class="menu-toggle">&#9776;</button>
     <ul class="nav-links">
       <li><a href="#screen1">Home</a></li>
-      <li><a href="#screen1">What is an AAC</a></li>
-      <li><a href="#screen2">Features</a></li>
-      <li><a href="#screen3">Table</a></li>
+      <li><a href="#screen2">What is an AAC?</a></li>
+      <li><a href="#screen3">Why Aloud?</a></li>
       <li><a href="#screen4">About</a></li>
       <li><a href="#screen5">Contact</a></li>
     </ul>
   </nav>
 
   <section id="screen1" class="banner">
-    <h1 class="banner-writefont">Write It Aloud®</h1>
-    <h2 class="banner-typefont">Type Less, Say More</h2>
+    <img src="./assets/aac-user.png" class="banner-image" alt="aac user banner image">
+    <div class="banner-info">
+      <h1 class="banner-typefont">Type Less, Say More</h1>
+      <h2 class="banner-writefont">
+        The best artificial voice system and AAC keyboard for human-like, real-time communication.
+        Whether you’re navigating autism, recovering from a stroke, or supporting someone with apraxia, 
+        we provide the best keyboards, real-time voices, and assistive interface for children, adults, and caretakers.
+      </h2>
+      <div class="banner-buttons">
+        <button class="banner-button banner-button-primary" >Try Aloud!</button>
+        <button class="banner-button banner-button-secondary" >See Demo</button>
+      </div>
+    </div>
   </section>
 
   <section id="screen2" class="screen">
-    <div class="screen-2-text">
-      <p class="aloud-font">
-
-        Write It Aloud is a next-gen AAC keyboard app designed for fast and fluent communication. Whether you’re navigating autism, recovering from a stroke, or supporting someone with apraxia, our intuitive keyboard, real-time voice feedback, and customizable interface make communication easier than ever.
-
+    <img class="half-image" src="./assets/aac-teaching.png">
+    
+    <div class="screen2-text">
+      <h2 class="banner-writefont blue">What is AAC?</h2>
+      <p>
+        A digital Augmentative/Alternative Communication (AAC) system is a special software that
+        allows people with special needs to communicate through the use of images, word-buttons, and by using digital voices
       </p>
-    </div>
-    <div class="screen-2-list">
-      <ul>
-        <li>The next generation of digital voices.</li>
-        <li>Type up to 50% faster with the most advance AAC keyboard.</li>
-        <li>The first text editor created specifically for real-time communication with artificial voices.</li>
-        <li>Try our Haacks for enhanced communication.</li>
-      </ul>
+      
     </div>
   </section>
 
-    <section id="screen3" class="screen table-section">
-  <div class="table-wrapper">
+  <section id="screen3" class="screen table-section">
+    <h1>Why choosing Aloud?</h1>
+    <div class="table-wrapper">
 
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Offline</th>
-                <th>High Voice Quality</th>
-                <th>AAC Keyboard</th>
-                <th>Speech Creation Features</th>
-                </tr>
-        </thead>
-        <tbody>
-            <tr><td>Proloquo2</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
-            <tr><td>GPT</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="negative-cell">✖</td></tr>
-            <tr><td>Natural reader</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
-            <tr><td>Aloud</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td><td class="aloud-cell">✔</td></tr>
-        </tbody>
-    </table>
-  </div>
+      <table>
+          <thead>
+              <tr>
+                  <th></th>
+                  <th class="tableSelected-body">Aloud</th>
+                  <th>Proloquo2go</th>
+                  <th>GPT</th>
+                  <th>Natural reader</th>
+                  </tr>
+          </thead>
+          <tbody>
+              <tr><td>Offline</td><td class="positive-cell tableSelected-body">✔</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td></tr>
+              <tr><td>High voice Quality</td><td class="positive-cell tableSelected-body">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
+              <tr><td>AAC Keyboard</td><td class="positive-cell tableSelected-body">✔</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td></tr>
+              <tr><td>Speech Creation Features</td><td class="positive-cell tableSelected-bottom">✔</td><td class="negative-cell">✖</td><td class="positive-cell">✔</td><td class="negative-cell">✖</td></tr>
+          </tbody>
+      </table>
+    </div>
+    
+      <div class="screen-2-list">
+        <ul>
+          <li>The next generation of digital voices.</li>
+          <li>Type up to 50% faster with the most advance AAC keyboard.</li>
+          <li>The first text editor created specifically for real-time communication with artificial voices.</li>
+          <li>Try our Haacks for enhanced communication.</li>
+        </ul>
+      </div>
 </section>
 
   <section id="screen4" class="about-us">
@@ -107,7 +126,7 @@
 
   <section id="screen5" class="contact">
     <h2 class="section-title">Contact</h2>
-    <button class="button" onclick="window.location.href='mailto:manuel@writeitaloud.com'">manuel@writeitaloud.com</button>
+    <button class="button" onclick="window.location.href='mailto:admin@writeitaloud.com'">admin@writeitaloud.com</button>
     <button class="button" onclick="window.location.href='tel:4237737734'">4237737734</button>
   </section>
 
