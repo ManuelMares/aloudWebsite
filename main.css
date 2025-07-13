@@ -232,6 +232,7 @@ What is an Section
       font-size: 5rem;
       text-align: center;
       width: 100%;
+      padding: 0 2rem;
   }
   .acc-content{
     display: flex;
@@ -254,6 +255,143 @@ What is an Section
     }
 
 
+/*
+=============================================================================== 
+Comparison Section 
+=============================================================================== 
+*/
+
+/* Section title */
+.comparison{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem
+}
+  .comparison p {
+    width: 100%;
+    padding: 0 3em;
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+    font-size: 1.75rem;
+    font-weight: 560;
+    color: #2645af;
+  }
+  .comparison-content{
+    width: 100vw;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+    /* General Table Wrapper */
+    .table-wrapper {
+      overflow-x: auto;
+      position: relative;
+      border: none;
+      outline: 0.25rem solid #0080e4;
+      padding: 0;
+      border-radius: 20px;
+    }
+
+    /* Table layout */
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: max-content;        
+      min-width: 100%;  
+    }
+
+    /* === Define consistent widths for first two columns === */
+    th:first-child,
+    td:first-child {
+      width: 10rem;
+      min-width: 10rem;
+      max-width: 10rem;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+      font-size: 1.5rem;
+      width: 10rem;
+      min-width: 10rem;
+      max-width: 10rem;
+    }
+    td:nth-child(2){
+      color: white;
+      font-size: 2rem;
+    }
+
+    /* Sticky first column */
+    table th:first-child,
+    table td:first-child {
+      position: sticky;
+      left: 0;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      z-index: 3;
+      text-align: left;
+      width: fit-content;
+      text-wrap: auto;
+
+      width: 10rem;
+      min-width: 10rem;
+      max-width: 10rem;
+      
+    }
+
+    th{
+      font-weight: bold;
+    }
+
+    .positive-cell,
+    .negative-cell{
+      font-size: 1.5rem;
+      width: 10rem;
+      min-width: 10rem;
+      max-width: 10rem;
+    }
+
+    /* Sticky second column (Aloud) */
+    .tableSelected-body,
+    .tableSelected-bottom {
+      background-color: #0080e4;
+      color: white;
+      font-weight: bold;
+      position: sticky;
+      left: 150px; /* exactly matches width of column 1 */
+      z-index: 2;
+    }
+
+    /* Gray background for other columns */
+    table th:not(:first-child):not(:nth-child(2)),
+    table td:not(:first-child):not(:nth-child(2)) {
+      background-color: #eeeeee;
+    }
+
+    /* General Cell Styling */
+    th, td {
+      padding: 1rem;
+      text-align: center;
+      border: none;
+      white-space: nowrap;
+    }
+
+    /* Positive and negative indicators */
+    .positive-cell {
+      color: green;
+      font-weight: bold;
+    }
+
+    .negative-cell {
+      color: red;
+      font-weight: bold;
+    }
 
 
 
@@ -313,6 +451,14 @@ Media Queries
           gap: 1rem;
         }
 
+      /* What is an AAC ---------------------------------------------------- */
+      .acc-content{
+        flex-direction: column;
+      }
+
+      /* Why choose us ----------------------------------------------------- */
+      .comparison-content{
+      }
     }
     
     @media (max-width: 768px) {
