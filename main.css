@@ -21,13 +21,23 @@
     }
 
     .banner-writefont {
-      font-family: "Shantell Sans", cursive;
-      font-weight: 532;
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 562;
       font-style: normal;
+      /* font-family: "Shantell Sans", cursive; */
+      /* font-weight: 532; */
+      /* font-style: normal; */
       font-variation-settings: "BNCE" 0, "INFM" 20, "SPAC" 4.8;
       color: #ffffff;
       font-size: 1rem;
       text-align: left;
+    }
+    .robot{
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 562;
+      font-style: normal;
     }
 
 
@@ -45,6 +55,31 @@
       width: 100vw;
     }
 
+    
+.solid-button-white{
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+    
+.outline-button-white{
+  border-radius: 5rem;
+  border: solid 0.3rem white;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
 /*
 =============================================================================== 
 Nav Bar
@@ -217,22 +252,20 @@ What is an Section
 .aacs-section{
   width: 100vw;
   min-height: 100vh;
-  background: white;
   display:flex;
   flex-direction: column;
   padding: 3rem 0;
   overflow: hidden;
+  background: linear-gradient(290deg,rgba(255, 255, 255, 1) 0%, rgba(175, 122, 245, 0.16) 17%, rgba(255, 255, 255, 1) 37%, rgba(66, 180, 212, 0.2) 55%, rgba(255, 255, 255, 1) 73%, rgba(89, 130, 235, 0.23) 87%, rgba(255, 255, 255, 1) 100%);
 }
   h2{
-      font-family: "Shantell Sans", cursive;
-      font-weight: 532;
-      font-style: normal;
       font-variation-settings: "BNCE" 0, "INFM" 20, "SPAC" 4.8;
       color: var(--secondary);
       font-size: 5rem;
       text-align: center;
       width: 100%;
       padding: 0 2rem;
+      background-color: transparent;
   }
   .acc-content{
     display: flex;
@@ -280,6 +313,7 @@ Comparison Section
   .comparison-content{
     width: 100vw;
     padding: 0 2rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -308,16 +342,16 @@ Comparison Section
     /* === Define consistent widths for first two columns === */
     th:first-child,
     td:first-child {
-      width: 8rem;
-      min-width: 8rem;
-      max-width: 8rem;
+      width: 7rem;
+      min-width: 7rem;
+      max-width: 7rem;
     }
     th:nth-child(2),
     td:nth-child(2) {
       font-size: 1.5rem;
-      width: 10rem;
-      min-width: 10rem;
-      max-width: 10rem;
+      width: 6rem;
+      min-width: 6rem;
+      max-width: 6rem;
     }
     td:nth-child(2){
       color: white;
@@ -347,9 +381,9 @@ Comparison Section
     .positive-cell,
     .negative-cell{
       font-size: 1.5rem;
-      width: 10rem;
-      min-width: 10rem;
-      max-width: 10rem;
+      width: 8rem;
+      min-width: 8rem;
+      max-width: 8rem;
     }
 
     /* Sticky second column (Aloud) */
@@ -359,7 +393,7 @@ Comparison Section
       color: white;
       font-weight: bold;
       position: sticky;
-      left: 8rem; /* exactly matches width of column 1 */
+      left: 7rem; /* exactly matches width of column 1 */
       z-index: 2;
     }
 
@@ -394,6 +428,62 @@ Comparison Section
 
 
 
+/*
+=============================================================================== 
+Get Aloud
+=============================================================================== 
+*/
+.get-aloud{
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+}
+.pricing-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+  align-items: center;
+}
+  .pricing{
+    border-radius: 10px;
+    outline: 0.25rem solid rgb(78, 78, 78);
+    box-shadow: 7px 10px 15px -3px rgba(0,0,0,0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+  .pricing-secondary{
+background: #c0f57a;
+background: linear-gradient(45deg,rgba(192, 245, 122, 1) 0%, rgba(255, 253, 148, 1) 100%);
+  }
+  .pricing-primary{
+    background: #00dce4;
+    background: linear-gradient(195deg,rgba(0, 220, 228, 1) 0%, rgba(8, 11, 163, 1) 100%);
+  }
+
+  .pricing-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+  }
+.white-title{
+  color:white;
+  font-weight: bold;
+}
+h3{
+  font-size: 2rem;
+}
 
 
 
@@ -417,6 +507,9 @@ Media Queries
         display: block;
       }
 
+
+      
+      /* Home -------------------------------------------------------------- */
       .home-content {
         flex-direction: column;
         text-align: center;
@@ -425,9 +518,7 @@ Media Queries
       p {
         padding: 0 1rem !important;
       }
-
-      /* Home -------------------------------------------------------------- */
-
+      
       .home-image {
         display: none;
       }
@@ -438,6 +529,7 @@ Media Queries
         max-width: 100%;
         padding: 0 1rem;
         box-sizing: border-box;
+        gap: 5rem;
       }
         .banner-typefont{
           text-align: center;
@@ -458,12 +550,21 @@ Media Queries
       }
 
       /* Why choose us ----------------------------------------------------- */
-      .comparison-content{
+      /* Comparison -------------------------------------------------------- */
+      .pricing-container{
+        flex-direction: column;
+      }
+      .pricing{
+        width: fit-content;
+        max-width: 95%;
       }
     }
     
     @media (max-width: 768px) {
       .home-content{
           width: 100%;
+      }
+      .home-text{
+        gap: 2rem;
       }
     }
